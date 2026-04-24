@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPORTACIONES T & B | PATRIC SOFT ®</title>
+    <link rel="icon" href="https://fav.farm/👑">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">IMPORTACIONES T & B </div>
+    <P>de Tamara Sanchez ®</P>
+    <p>ESTILO & DISTINCIÓN EN CADA PRODUCTO</p>
+</header>
+
+<div class="container">
+    <div class="user-data-box">
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="user-name" placeholder="Tu Nombre Completo">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" id="user-address" placeholder="Dirección de Entrega">
+        </div>
+    </div>
+
+    <div class="categories-container" id="category-bar">
+        <button class="btn-cat active" onclick="filterProducts('todos', event)">Todos</button>
+        <button class="btn-cat" onclick="filterProducts('tecnologia', event)">Tecno</button>
+        <button class="btn-cat" onclick="filterProducts('hogar', event)">Hogar</button>
+        <button class="btn-cat" onclick="filterProducts('belleza', event)">Belleza</button>
+        <button class="btn-cat" onclick="filterProducts('accesorios', event)">Accesorios</button>
+    </div>
+
+    <div class="product-grid" id="grid">
+        </div>
+</div>
+
+<div id="cart-bar" class="cart-bar" style="display: none;">
+    <div class="cart-left">
+        <span class="badge" id="cart-count">0</span>
+        <div id="cart-total-display"></div>
+        <button class="btn-clear" onclick="clearCart()">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </div>
+    <a href="#" class="btn-order" onclick="sendOrder()">
+        <i class="fab fa-whatsapp"></i> PEDIR
+    </a>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>PATRIC SOFT ® | Soluciones Digitales 2026</p>
+        <a href="https://wa.me/5492657521775" class="dev-contact" target="_blank">
+            <i class="fas fa-code"></i> Contactar al Desarrollador
+        </a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
