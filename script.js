@@ -114,7 +114,7 @@ function sendOrder() {
     const valorCuota = (totalCuotas / CUOTAS).toFixed(0);
     const seña = (totalContado * 0.5).toFixed(0);
 
-    let msg = `🛍️ *NUEVO PEDIDO | PATRIC SOFT ®*\n`;
+    let msg = `🛍️ *NUEVO PEDIDO | MIL COSAS ! ®*\n`;
     msg += `------------------------------------------\n`;
     msg += `👤 *Cliente:* ${nombre}\n`;
     msg += `📍 *Entrega:* ${direccion}\n`;
