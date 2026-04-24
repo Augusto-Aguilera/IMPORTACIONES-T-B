@@ -135,7 +135,7 @@ function sendOrder() {
     msg += `⚠️ _Envía el comprobante para procesar tu pedido._`;
 
     // NÚMERO DE LA CLIENTA PARA PEDIDOS
-    const telCliente = "54926244562";
+    const telCliente = "5492657244562";
     window.open(`https://wa.me/${telCliente}?text=${encodeURIComponent(msg)}`);
 }
 
