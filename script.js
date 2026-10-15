@@ -114,7 +114,7 @@ function sendOrder() {
     const valorCuota = (totalCuotas / CUOTAS).toFixed(0);
     const seña = (totalContado * 0.5).toFixed(0);
 
-    let msg = `🛍️ *NUEVO PEDIDO | MIL COSAS ! ®*\n`;
+    let msg =        `🛍️ *NUEVO PEDIDO ! ®*\n`;
     msg += `------------------------------------------\n`;
     msg += `👤 *Cliente:* ${nombre}\n`;
     msg += `📍 *Entrega:* ${direccion}\n`;
@@ -135,7 +135,7 @@ function sendOrder() {
     msg += `⚠️ _Envía el comprobante para procesar tu pedido._`;
 
     // NÚMERO DE LA CLIENTA PARA PEDIDOS
-    const telCliente = "5492657244562";
+    const telCliente = "5492657521775";
     window.open(`https://wa.me/${telCliente}?text=${encodeURIComponent(msg)}`);
 }
 
